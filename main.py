@@ -21,6 +21,8 @@ logger = logging.getLogger(__name__)
 
 # Создание таблицы если не существует
 Transport.create_table(safe=True)
+AvailableTimestamps.create_table(safe=True)
+UniqueTransport.create_table(safe=True)
 
 parser = Parse()
 NORMAL_SLEEP = 60  # время ожидания при нормальной работе
